@@ -1,0 +1,27 @@
+{
+  "name": "ftp",
+  "version": "1.0.0",
+  "description": "a FTP module for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaocheng/ftp.git"
+  },
+  "keywords": [
+    "ftp",
+    "sftp",
+    "nodejs"
+  ],
+  "author": "程刁",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diaocheng/ftp/issues"
+  },
+  "homepage": "https://github.com/diaocheng/ftp#readme",
+  "devDependencies": {
+    "xregexp": "^3.1.1"
+  }
+}
