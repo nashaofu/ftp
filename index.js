@@ -1,4 +1,5 @@
 var FTP = require('./lib/ftp');
+var fs = require('fs');
 var app = new FTP({
     host: '192.168.1.100',
     port: 21,
@@ -13,9 +14,27 @@ var app = new FTP({
 // app.rename('foo.remote-copy10.txt', 'foo.remote-copy11.txt', function (error, data) {
 //     console.log(data, 're2')
 // });
-app.status('./', function(error, data) {
-    console.dir(data);
+// app.pasv(function (socket) {
+//     app.cmd.append({
+//         cmd: 'STOR LICENSE',
+//         fn: function (error, data) {
+//             console.log(data)
+//             fs.stat('LICENSE', function (err, stats) {
+//                 if (err) {
+//                     // socket.end('LICENSE');
+//                 } else {
+//                     fs.createReadStream('LICENSE').pipe(socket);
+//                 }
+//             });
+//         }
+//     })
+// });
+app.stor('README.md', function (error, data) {
+    console.log(data);
 });
+// app.status('./', function(error, data) {
+//     console.dir(data);
+// });
 // app.list('./', function (error, data) {
 //     console.log(data, 'list');
 // });
