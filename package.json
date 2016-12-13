@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/diaocheng/ftp/issues"
   },
-  "homepage": "https://github.com/diaocheng/ftp#readme",
-  "devDependencies": {
-    "xregexp": "^3.1.1"
-  }
+  "homepage": "https://github.com/diaocheng/ftp#readme"
 }

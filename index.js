@@ -29,7 +29,9 @@ var app = new FTP({
 //         }
 //     })
 // });
-app.stor('README.md', function (error, data) {
+app.status('./', function (error, data) {
+    console.dir(data);
+}).stor('.gitignore', function (error, data) {
     console.log(data);
 });
 // app.status('./', function(error, data) {
